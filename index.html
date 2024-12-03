@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Adnox</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="https://adnox.in/wp-content/themes/adnox/assets/img/adnox-logo.webp" class="logoimg"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="#"aria-expanded="false">
+                         Products
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" >Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" >Contact Us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+  <div class="bodyy">
+              <main>
+            <ul class='slider'>
+              <li class='item' style="background-image: url('https://adnox.in/wp-content/uploads/2022/12/wheelchairs.webp')">
+                <div class='content'>
+                  <h2 class='title'>wheelchairs</h2>
+                  <p class='description'>Comfortable Seating For an active Lifestyle</p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('https://adnox.in/wp-content/uploads/2022/12/banner01.webp')">
+                <div class='content'>
+                  <h2 class='title'>Medical Laboratory</h2>
+                  <p class='description'> Your Health is our Priority.Book your health checkup with Adnox Super Speciality Laboratory </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('https://adnox.in/wp-content/uploads/2022/12/pharmacy.webp')">
+                <div class='content'>
+                  <h2 class='title'>Pharmacy Store</h2>
+                  <p class='description'> At our pharmacy, we give premium treatment  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('https://adnox.in/wp-content/uploads/2022/12/omron.webp')">
+                <div class='content'>
+                  <h2 class='title'>Homecare Products</h2>
+                  <p class='description'>
+                    Omron Automatic Blood Preasure Monitor
+                  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('https://adnox.in/wp-content/uploads/2022/12/kproseries.webp')">
+                <div class='content'>
+                  <h2 class='title'>Medical Equipments</h2>
+                  <p class='description'>
+                    Patient Monitor - The K pro series is designed for critical care Monitoring
+                  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='item' style="background-image: url('https://i.pinimg.com/736x/af/c5/53/afc553e12c89eef85f87e9f9a34e02a0.jpg')">
+                <div class='content'>
+                  <h2 class='title'>Premium Infratsructure</h2>
+                  <p class='description'> Modern and comforting interior and clean environment assured </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+            </ul>
+            <nav class='nav'>
+              <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+              <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+            </nav>
+          </main>
+          
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <script>
+            const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+        </script>
+        </div>
+        <div class="container-fluid bg1">
+            <div class="row">
+                <div class="col-xl-1 icons floating-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="blue" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg><br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColo`r" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg><br>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="red" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                      </svg><br>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="green" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                      </svg>
+                </div>
+                <div class="col-xl-5">
+                    <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="https://adnox.in/wp-content/uploads/2022/12/about-768x888.webp" alt="Front Image">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="https://adnox.in/wp-content/uploads/2022/12/about2.webp" alt="Back Image">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h1 class="about"> About Us </h1>
+                            <h3 class="description2">ADNOX HEALTHCARE is dedicated and committed to serve the Healthcare community by providing innovative, high quality equipments, surgical products, consumables & services from the world’s leading manufacturers so that our customers can deliver their best care. Our home care product range consists of all popular brands to ensure the best choice for every individual. We also have a laboratory and pharmacy to cater to the public.<br><br>
+        
+                                We have partnered with major medical equipment manufacturers to provide customer-oriented reliable services and focus on implementing technologies that best suit each organization’s needs, while offering the widest selection of medical supplies and medical equipment products. Whether you are an individual, a medical professional, or a medical establishment, ADNOX Healthcare is the source for all your healthcare product needs.</h3>
+                        </div>
+                    </div>
+                   <div class="row floating-cylinder">
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bannersmall">
+            <div class="overclr">
+                <div class="container-fluid">
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="rgb(35, 4, 121)" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                                    <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="title2">Products</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="60" height="60" fill="rgb(35, 4, 121)"  class="bi bi-brilliance" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16M1 8a7 7 0 0 0 7 7 3.5 3.5 0 1 0 0-7 3.5 3.5 0 1 1 0-7 7 7 0 0 0-7 7"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="title2">Services</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="60" height="60" fill="rgb(35, 4, 121)"  class="bi bi-award-fill" viewBox="0 0 16 16">
+                                    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="title2">Specialities</p>
+                        </div>
+                    </div>
+                  
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="60" height="60" fill="rgb(35, 4, 121)" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
+                                    <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="title2">Accessories</p>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="rgb(35, 4, 121)" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="title2">  Service <BR> Training </p>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="rgb(35, 4, 121)" class="bi bi-router-fill" viewBox="0 0 16 16">
+                                    <path d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707"/>
+                                    <path d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707Z"/>
+                                    <path d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86zM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m4.5-.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m1.5-.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0"/>
+                                    <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="title2">Book <br> Online</p>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="rgb(35, 4, 121)" class="bi bi-battery-charging" viewBox="0 0 16 16">
+                                    <path d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z"/>
+                                    <path d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"/>
+                                    <path d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+                                    <path d="M12 10h-1.783l1.542-1.639q.146-.156.241-.34zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646M16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="title2">Batteries</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <h2 class="title4">Hear What Experts Say</h2>
+        <h4 class="subtitle">Click and Read Through Images!</h4>
+        <div class="container-fluid testimonials2">
+          <div class="scene">
+            <label class="card-wrap">
+                <input type="checkbox" class="flipcard">
+                <div class="card">
+                    <div class="front card-face">
+                        <img src="https://img.freepik.com/free-photo/female-doctors-bathrobes-african-girl-stethoscope-doctor-s-neck_1157-47156.jpg?t=st=1733030249~exp=1733033849~hmac=f3f708111f473cc38ffd65f2c366b50321ad14a4592b85e42d28e98adfbfbd51&w=900" alt="" class="card-photo">
+                    </div>
+                    <div class="back card-face">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                      </svg>
+                      <h2 class="title6">
+                        Sophia Zimmer
+                      </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis illum voluptatem numquam error. Nesciunt consectetur distinctio dolorum velit saepe doloremque incidunt ullam quisquam minima, illo sed officiis sunt reiciendis voluptatum!</p>
+                    </div>
+                </div>
+            </label>
+            <label class="card-wrap">
+                <input type="checkbox" class="flipcard">
+                <div class="card">
+                    <div class="front card-face">
+                        <img src="https://img.freepik.com/free-photo/cheerful-multiethnic-medics-with-papers_23-2147767245.jpg?t=st=1733032729~exp=1733036329~hmac=3ecd5b140348c06fa3d40aa793dfe0b2aa9d2ea9e6378dacdf917af7279f171a&w=900" alt="" class="card-photo">
+                    </div>
+                    <div class="back card-face">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                      </svg>
+                      <h2 class="title6">
+                        Adhina Swells
+                      </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis expedita aspernatur deserunt dolorem voluptate nisi nulla ea fugit perspiciatis laboriosam inventore tempora illum accusamus, totam beatae, animi recusandae quidem! Iste?</p>
+                    </div>
+                </div>
+            </label>
+            <label class="card-wrap">
+                <input type="checkbox" class="flipcard">
+                <div class="card">
+                    <div class="front card-face">
+                        <img src="https://img.freepik.com/free-photo/full-shot-doctors-walking-together_23-2149355019.jpg?t=st=1733032785~exp=1733036385~hmac=8d35f32e93e83e4ee2881ffa1193c0c400562503794ce88eb3dceb49cd5b4d9a&w=360" alt="" class="card-photo">
+                    </div>
+                    <div class="back card-face">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                      </svg>
+                      <h2 class="title6">
+                        Jake Luis
+                      </h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repellendus fugit repellat non commodi nostrum numquam ipsam illum et dolor, a nemo impedit saepe qui architecto officiis sint. Explicabo, harum?</p>
+                    </div>
+                </div>
+            </label>
+            <label class="card-wrap">
+              <input type="checkbox" class="flipcard">
+              <div class="card">
+                  <div class="front card-face">
+                      <img src="https://img.freepik.com/free-photo/medical-consultation-two-professional-doctors_329181-2214.jpg?t=st=1733032931~exp=1733036531~hmac=f64448e9aeec2edc648750e5d8b51ebc20c03e5d25fba9c1d2fcc727d080a994&w=360" alt="" class="card-photo">
+                      
+                  </div>
+                  <div class="back card-face">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                      <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                    </svg>
+                    <h2 class="title6">
+                      Aaron Pollings
+                    </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis eos, amet temporibus enim accusamus possimus pariatur, quasi corrupti earum blanditiis reiciendis totam ex ullam dignissimos aut quo obcaecati aspernatur beatae.</p>
+                  </div>
+              </div>
+          </label>
+          
+        </div>
+        </div>
+        <div class="banner2">
+          <h2 class="title5">Our Partners</h2>
+          <div class="row">
+            <div class="col-xl">
+              <img src="https://adnox.in/wp-content/uploads/2022/10/comen.webp" class="partners">
+            </div>
+            <div class="col-xl">
+              <img src="https://adnox.in/wp-content/uploads/2022/10/bpl.jpg" class="partners">
+            </div>
+            <div class="col-xl">
+              <img src="https://adnox.in/wp-content/uploads/2022/10/explore.jpg" class="partners">
+            </div>
+            <div class="col-xl">
+              <img src="https://adnox.in/wp-content/uploads/2022/12/omron.jpg" class="partners">
+            </div>
+            <div class="col-xl">
+              <img src="https://adnox.in/wp-content/uploads/2022/12/karma.jpg" class="partners">
+            </div>
+            
+          </div>
+        </div>
+        <div class="container bg2">
+          <h2 class="title4">Get In Touch</h2>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="row ">
+                        <div class="col-xl-6 imgform">
+                        </div>
+                        <div class="col-xl-6">
+<form class="form">
+    <p class="title3">Register </p>
+    <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Firstname</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Lastname</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input class="input" type="email" placeholder="" required="">
+        <span>Email</span>
+    </label> 
+        
+    <label>
+        <input class="input" type="password" placeholder="" required="">
+        <span>Password</span>
+    </label>
+    <label>
+        <input class="input" type="password" placeholder="" required="">
+        <span>Confirm password</span>
+    </label>
+    <button class="submit">Submit</button>
+    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pad">
+          <footer class="footer-section">
+            <div class="container-fluid">
+                <div class="footer-cta">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>1010 Avenue, sw 54321,<br> chandigarh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>9876543210 0</span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>mail@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-xl">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="../pg3/ADNOXLOGO.jpg" class="img-fluid" alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, <br> consec tetur adipisicing elit, <br>sed do eiusmod tempor incididuntut<br> consec tetur adipisicing
+                                    elit, <br>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl third">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">services</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <P>COPYRIGHT @ Adnox Health Care</P>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
